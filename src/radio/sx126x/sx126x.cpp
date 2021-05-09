@@ -443,7 +443,7 @@ extern "C"
 	{
 		uint8_t buf[4];
 		uint32_t freq = 0;
-
+printf(">>>> FREQ: %lu  <<<<<< \r\n", frequency);
 		if (ImageCalibrated == false)
 		{
 			SX126xCalibrateImage(frequency);
@@ -523,6 +523,7 @@ extern "C"
 		uint32_t tempVal = 0;
 		uint8_t buf[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
+printf(">>>>> data rate: %d\r\n<<<<<<", modulationParams->Params.LoRa.SpreadingFactor);
 		// Check if required configuration corresponds to the stored packet type
 		// If not, silently update radio packet type
 		if (PacketType != modulationParams->PacketType)

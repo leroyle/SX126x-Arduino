@@ -1103,4 +1103,9 @@ extern "C"
 	{
 		return LoRaMacGetOTAADevId();
 	}
+
+	bool lmh_QueryTxState()
+	{
+		return LoRaMacQueryState();
+	}
 };

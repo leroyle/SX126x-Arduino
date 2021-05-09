@@ -258,5 +258,11 @@ extern "C"
  * @param userDatarate Datarate to be used 
  */
 	void lmh_setSingleChannelGateway(uint8_t userSingleChannel, int8_t userDatarate);
+
+	/**@brief Check if transmit is possible
+ *
+ *
+ */
+	bool lmh_QueryTxState();
 };
 #endif

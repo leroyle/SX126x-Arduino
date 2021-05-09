@@ -1810,6 +1810,7 @@ extern "C"
 					LoRaMacParams.ChannelsNbRep = linkAdrNbRep;
 				}
 
+				LOG_LV1("ProcessMacCommands","Sending LINK ADR ANS");
 				// Add the answers to the buffer
 				for (uint8_t i = 0; i < (linkAdrNbBytesParsed / 5); i++)
 				{
@@ -3466,5 +3467,15 @@ extern "C"
 	uint32_t LoRaMacGetOTAADevId(void)
 	{
 		return LoRaMacDevAddr;
+	}
+
+	bool LoRaMacQueryState()
+	{
+		if (LoRaMacState == LORAMAC_IDLE)
+		{
+				return true;
+		}
+
+		return false;
 	}
 };
