@@ -1171,3 +1171,8 @@ bool lmh_setConfRetries(uint8_t retries)
 	}
 	return false;
 }
+
+ bool lmh_QueryTxState()
+{
+		return LoRaMacQueryState();
+}

@@ -1958,4 +1958,15 @@ LoRaMacStatus_t LoRaMacMlmeRequest(MlmeReq_t *mlmeRequest);
  */
 LoRaMacStatus_t LoRaMacMcpsRequest(McpsReq_t *mcpsRequest);
 
+/*!
+ * \brief   Query if transmitter is busy
+ *
+ * \details Test state of LoRaMacState
+ *
+ * \retval  Possible returns are:
+ *          \ref true if transmitter can transmit,
+ *          \ref false if transmitter not available to transmit
+ */
+bool LoRaMacQueryState();
+
 #endif // __LORAMAC_H__

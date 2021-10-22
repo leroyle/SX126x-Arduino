@@ -299,4 +299,10 @@ bool lmh_setAS923Version(uint8_t version);
  */
 bool lmh_setConfRetries(uint8_t retries);
 
+/**@brief Check if transmit is possible
+ *
+ *
+*/
+bool lmh_QueryTxState();
+
 #endif

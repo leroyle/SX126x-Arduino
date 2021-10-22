@@ -3452,3 +3452,13 @@ uint32_t LoRaMacGetOTAADevId(void)
 {
 	return LoRaMacDevAddr;
 }
+
+bool LoRaMacQueryState()
+	{
+			if (LoRaMacState == LORAMAC_IDLE)
+			{
+					return true;
+			}
+
+	return false;
+}
