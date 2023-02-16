@@ -34,5 +34,10 @@
 		"type": "git",
 		"url": "https://github.com/beegee-tokyo/SX126x-Arduino"
 	},
-	"homepage": "https://github.com/beegee-tokyo/SX126x-Arduino"
+	"homepage": "https://github.com/beegee-tokyo/SX126x-Arduino",
+	"build": {
+        	"libArchive": false,
+        	"extraScript": "extra_script.py"
+    	}
+
 }
